@@ -1,16 +1,17 @@
-# React + Vite
+# Lavender Dream
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React and Vite birthday surprise with a countdown, photo, anime gallery, and birthday letter.
 
-Currently, two official plugins are available:
+## Netlify deployment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The included `netlify.toml` configures Node.js 22, the build command `npm run build`, and the publish directory `dist`. Connect this repository to the existing Netlify project and deploy using these settings. The site does not require environment variables or a backend.
 
-## React Compiler
+The application entry point and images live in the repository root. Images are imported so Vite includes them in the deployed output.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Local development
 
-## Expanding the ESLint configuration
+Install dependencies with `npm ci`, then start the development server with `npm run dev`. Run `npm run lint` for static checks.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Countdown date
+
+The reveal date in `App.jsx` is August 20, 2026 at midnight in UTC+05:30. After this date, the birthday reveal appears immediately. Change `TARGET_DATE` and the displayed birthday date together if a different event date is intended.
