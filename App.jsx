@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
-import "./App.css";
 
 // ==============================
 // ANIME IMAGES
 // ==============================
 
-import mikeyAnime from "./assets/mikey_anime.jpg";
-import leviAnime from "./assets/levi_anime.jpg";
-import sukunaAnime from "./assets/sukuna_anime.png";
-import kushinaAnime from "./assets/kushina_anime.jpg";
-import valdigoAnime from "./assets/valdigo_anime.jpg";
-import luffyAnime from "./assets/luffy_anime.jpg";
-import aiyonokojiAnime from "./assets/aiyonokoji_anime.jpg";
-import tojiAnime from "./assets/toji_anime.jpg";
+import mikeyAnime from "./mikey_anime.jpg";
+import leviAnime from "./levi_anime.jpg";
+import sukunaAnime from "./sukuna_anime.png";
+import kushinaAnime from "./kushina_anime.jpg";
+import valdigoAnime from "./valdigo_anime.jpg";
+import luffyAnime from "./luffy_anime.jpg";
+import aiyonokojiAnime from "./aiyonokoji_anime.jpg";
+import tojiAnime from "./toji_anime.jpg";
+import sangaviPhoto from "./sangavi.jpeg";
 
 // ==============================
 // COUNTDOWN
@@ -319,7 +319,7 @@ function BirthdayReveal() {
         <div className="photo-frame">
 
           <img
-            src="/sangavi.jpeg"
+            src={sangaviPhoto}
             alt="Sangavi"
             className="birthday-photo"
           />
